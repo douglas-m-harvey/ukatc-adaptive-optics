@@ -278,7 +278,7 @@ def circle(diameter, shape = None, centre = None):
     """
     shape = np.ceil(np.array([diameter, diameter])).astype(int) if shape is None else np.array(shape)
     centre = (shape - 1)/2 if centre is None else centre
-    yy, xx = np.mgrid[:shape[1], :shape[0]]
+    yy, xx = np.mgrid[:shape[0], :shape[1]]
     circle_distance = np.sqrt((yy - centre[0])**2 + (xx - centre[1])**2)
     circle_array = np.zeros(shape, dtype = bool)
     circle_array[(circle_distance <= diameter/2)] = True
