@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ukatc-adaptive-optics"
+version = "0.1.0"
+description = "Adaptive Optics tools for UK Astronomy Technology Centre projects"
+authors = ["Douglas Harvey <46091998+douglas-m-harvey@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.2"
+scipy = "^1.14.1"
+sympy = "^1.13.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
