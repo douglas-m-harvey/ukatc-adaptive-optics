@@ -290,8 +290,8 @@ def ellipse(axes, shape = None, centre = None):
 
     Args:
         axes (iterable of floats or ints): Length-2 iterable defining the major and minor axes of the ellipse in pixels.
-        shape (_type_, optional): Length-2 iterable defining the shape of the output array. If None, the output array shape is defined to fit the diameter. Defaults to None.
-        centre (_type_, optional): The centre of the elliptical mask. Matrix-style rows by columns indexing, with the top-left corner at (0, 0). Defaults to None.
+        shape (iterable of ints, optional): Length-2 iterable defining the shape of the output array. If None, the output array shape is defined to fit the diameter. Defaults to None.
+        centre (iterable of floats or ints, optional): The centre of the elliptical mask. Matrix-style rows by columns indexing, with the top-left corner at (0, 0). Defaults to None.
 
     Returns:
         numpy ndarray: The elliptical Boolean mask array. 
